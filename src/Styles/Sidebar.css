@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Caveat:wght@400;500&family=Cinzel:wght@400;500;600&family=Clicker+Script&family=Fasthand&family=Lobster&family=Marck+Script&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,600;1,200;1,400;1,500&family=Redacted+Script:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+.header {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  top: 0;
+  position: relative;
+  border-bottom-right-radius: 50px;
+  box-shadow: 10px 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 80px;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #212245;
+  transition: 0.3s;
+  padding: 0 40px;
+}
+
+.menu a:hover {
+  color: #df2020;
+}
+
+.custom__search {
+  position: absolute;
+  top: 2.5rem;
+  right: 80px;
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  margin-right: 40px;
+  height: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0 rgba(216, 216, 223, 0.95);
+  justify-content: center;
+}
+.custom__search input {
+  border: none;
+  outline: none;
+  color: #000;
+  font-family: poppins;
+}
+
+.custom__search i {
+  color: rgb(31, 233, 233);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.custom__search i:hover {
+  color: rgb(250, 98, 71);
+}
+
+.active__menu {
+  color: #df2020 !important;
+}
+
+.nav__right {
+  padding-right: 40px;
+}
+
+.nav__right i {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.cart__icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart__icon i {
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.user {
+  cursor: pointer;
+}
+
+.cart__badge {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background: #df2020;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mobile__menu {
+  padding-right: 30px;
+  display: none;
+}
+
+.header__closeButton span i {
+  font-size: 1.1rem;
+  background: #212245;
+  padding: 5px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .header {
+    width: 100%;
+  }
+  .menu a {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    width: 100%;
+  }
+  .logo img {
+    width: 70px;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.425);
+    z-index: 99;
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10px;
+  }
+
+  .menu a {
+    font-size: 1rem;
+    font-family: poppins;
+    margin-right: 90px;
+  }
+  .custom__search {
+    right: 25%;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .show__menu {
+    display: block;
+  }
+
+  .nav__right i {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .close__button {
+    display: flex;
+  }
+  .mobile__menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile__menu i {
+    padding: 0 20px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .menu {
+    width: 100%;
+  }
+
+  .close__button {
+    width: fit-content;
+    height: 60px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0.5rem;
+    right: 0rem;
+  }
+
+  .close__button span i {
+    font-size: 1.1rem;
+    background: #212245;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mobile__menu {
+    padding-left: 20px;
+  }
+}

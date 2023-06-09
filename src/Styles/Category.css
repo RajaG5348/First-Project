@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Caveat:wght@400;500&family=Cinzel:wght@400;500;600&family=Clicker+Script&family=Fasthand&family=Lobster&family=Marck+Script&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,600;1,200;1,400;1,500&family=Redacted+Script:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+.catlog{
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: poppins;
+}
+
+.category__Menu{
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    gap: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 40px;
+    align-items: center;
+    justify-content: center;
+}
+.category__Menu:hover{
+    transform: translateY(-10px);
+}
+
+.catlog .category__Menu .category__item img{
+    width: 150px;
+}
+
+.catlog .category__Menu h6{
+    font-size: 14px;
+    font-weight: 900;
+}
+@media screen and (max-width:1292px) {
+    .catlog{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+@media screen and (max-width:992px) {
+    .catlog{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+@media screen and (max-width:482px) {
+    .catlog{
+        display: grid;
+        grid-template-columns: 80%;
+    }
+}

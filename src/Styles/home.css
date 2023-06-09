@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Caveat:wght@400;500&family=Cinzel:wght@400;500;600&family=Clicker+Script&family=Fasthand&family=Lobster&family=Marck+Script&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,600;1,200;1,400;1,500&family=Redacted+Script:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+.home {
+  width: 100%;
+  margin: 80px 0 100px 0;
+  font-family: poppins;
+}
+
+.home .row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.home .row .col-1 {
+  width: 100%;
+  margin-left: 100px;
+}
+
+.home .row .col-2 {
+  width: 100%;
+}
+
+.home .row .col-1 h5 {
+  font-size: 20px;
+}
+
+.home .row .col-2 img {
+  width: 60%;
+  margin-left: 20%;
+  box-shadow: 10px 0px 0px rgb(209, 204, 204, 0.25);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.home .row .col-2 img:hover {
+  transform: scale(1.06789);
+}
+
+.home .col-1 h2 {
+  font-size: 2.5rem;
+  line-height: 55px;
+}
+
+.home .col-1 span {
+  color: rgb(247, 100, 74);
+}
+
+.home .col-1 p {
+  line-height: 30px;
+  font-size: 1rem;
+  color: #777;
+}
+
+.home .home__btn {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  margin-top: 4px;
+}
+
+.home .home__btn button {
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: poppins;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.home .home__btn button:hover {
+  transform: scale(1.029);
+}
+.home .home__btn button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.home .home__btn .order__btn {
+  background: rgb(74, 247, 140);
+  color: #fff;
+}
+
+.home .home__btn .allfoods__btn {
+  background: rgb(247, 100, 74);
+}
+
+.home .home__btn .allfoods__btn a {
+  color: #fff;
+}
+
+.home .hero__service {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-family: poppins;
+  justify-content: flex-start;
+}
+
+.home .hero__service .hero__ico {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.home .hero__service p {
+  color: rgb(29, 27, 27);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.home .hero__service .hero__ico i {
+  background: rgb(247, 100, 74);
+  width: 22px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+}
+.home .hero__service .hero__ico span {
+  color: rgb(29, 27, 27);
+}
+
+.home-text .text__center {
+  text-align: center;
+  margin: 100px 0;
+  font-family: poppins;
+  text-transform: capitalize;
+}
+
+.home-text .text__center h5 {
+  color: rgb(233, 65, 35);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.home-text .text__center h2 {
+  margin: 3px 0;
+}
+
+.home-text .text__center h2 span {
+  color: rgb(247, 100, 74);
+}
+
+.home-text .text__center p {
+  font-size: 12px;
+  color: rgb(75, 71, 71);
+}
+
+.home__images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: 100px;
+}
+
+.home__images .home__items img {
+  width: 150px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.home__images .home__items h5 {
+  font-size: 17px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 0;
+  font-family: poppins;
+}
+
+.home__images .home__items p {
+  font-size: 12px;
+  color: rgb(75, 71, 71);
+  width: 350px;
+  padding-top: 10px;
+  font-family: poppins;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width:1290px) {
+  .home__images{
+   
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width:992px) {
+  .home__images{
+   
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+  }
+}
+
+
+@media screen and (max-width:760px) {
+.home .row {
+  flex-wrap: wrap;
+}
+
+.col-2 img{
+width: 200px;
+margin-top: 80px;
+}
+}

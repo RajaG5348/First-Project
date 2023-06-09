@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Caveat:wght@400;500&family=Cinzel:wght@400;500;600&family=Clicker+Script&family=Fasthand&family=Lobster&family=Marck+Script&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,600;1,200;1,400;1,500&family=Redacted+Script:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.notfound {
+  position: absolute;
+  right: 40%;
+  top: 40%;
+  font-family: fasthand;
+  display: flex;
+  flex-direction: column;
+}
+
+.notfound h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: tomato;
+}
+.notfound h2 span {
+  text-transform: capitalize;
+  color: aqua;
+}
+.notfound p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: caveat;
+  color: rgb(28, 224, 113);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.notfound p i {
+  padding: 0 10px;
+  color: rgb(214, 49, 20);
+}
+
+.notfound button {
+  background: none;
+  border: none;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: cinzel;
+  font-weight: 500;
+  font-size: 16px;
+  background: rgb(214, 49, 20);
+  color: #fff;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  margin-left: 60px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.notfound button:hover{
+  transform: scale(1.039612);
+}

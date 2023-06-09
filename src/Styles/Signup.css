@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Caveat:wght@400;500&family=Cinzel:wght@400;500;600&family=Clicker+Script&family=Fasthand&family=Lobster&family=Marck+Script&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,400;0,600;1,200;1,400;1,500&display=swap');
+
+.signup-box {
+    width: 450px;
+    margin:5% 40%;
+    border-radius: 20px;
+}
+
+.signup-box h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: poppins;
+    text-transform: capitalize;
+    color: rgb(68, 216, 130);
+}
+
+.signup-links {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-box .signup-links a {
+    margin: 10px 20px;
+    font-size: 20px;
+    color: rgb(247, 87, 58);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.signup-box .signup-links a:hover {
+    transform: scale(1.2968);
+    color: rgb(68, 216, 130);
+}
+
+.signup-box p {
+    text-align: center;
+    font-family: poppins;
+    font-size: 12px;
+}
+
+.signup-box .input-box {
+    background: rgb(246, 246, 255);
+    width: 75%;
+    position: relative;
+    left: 10%;
+    margin: 30px 0;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.signup-box .input-box input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: rgb(246, 246, 255);
+    font-family: poppins;
+}
+
+.signup-box button {
+    width: 75%;
+    position: relative;
+    left: 10%;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background: none;
+    background-color: rgb(68, 216, 130);
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-family: poppins;
+    font-weight: 700;
+    transition: 0.3s ease;
+    text-transform: capitalize;
+}
+
+.signup-box button:hover {
+    transform: scale(1.0578);
+}
+
+.signup-box .rgd {
+    display: block;
+    margin: 30px 50px;
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-size: 14px;
+    font-family: poppins;
+}
+
+.signup-box .rgd span {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-family: caveat;
+}
+
+.signup-box .rgd span:hover {
+    color: rgb(68, 216, 130);
+   
+}
+@media screen and (max-width:750px) {
+    .signup-box{
+        margin: 10px;
+    }
+}
+@media screen and (max-width:466px) {
+    .signup-box{
+        margin: 0;
+        width: 300px;
+    }
+}
+
+
+/* Forget password  */
+
+.Fwd-box {
+    width: 450px;
+    margin: 5% 40%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.Fwd-box .bi-key {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(68, 216, 130);
+    margin-left: 45%;
+}
+
+.Fwd-box h2 {
+    text-align: center;
+    font-family: marck script;
+    font-size: 25px;
+    margin-bottom: 5px;
+
+}
+
+.Fwd-box p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Fwd-box label {
+    font-family: poppins;
+    padding: 0 40px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.Fwd-box input {
+    width: 75%;
+    padding: 10px 0 10px 20px;
+    border-radius: 5px;
+    margin: 0 40px;
+    border: none;
+    background: rgb(224, 224, 230);
+    outline: none;
+    font-family: poppins;
+    
+}
+
+.Fwd-box button{
+    margin: 30px 40px 10px 40px ;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: rgb(68, 216, 130);
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-family: caveat;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Fwd-box button:hover{
+    transform: scale(1.01678);
+}
+
+.Fwd-box .fgd{
+    text-align: center;
+    margin: 30px;
+    font-size: 18px;
+    font-family: caveat;
+    font-weight: 600;
+    color: rgb(68, 216, 130);
+    transition: 0.3s ease;
+}
+
+.Fwd-box .fga{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(68, 216, 130);
+    
+}
+
+.Fwd-box .fgd:hover{
+    transform: scale(1.07980);
+}
+
+@media screen and (max-width:800px) {
+    .Fwd-box{
+        margin: 20px 30px;
+    }
+}
+@media screen and (max-width:520px) {
+    .Fwd-box{
+        margin: 0;
+        width: 300px;
+    }
+}
