@@ -129,6 +129,9 @@
   padding-right: 30px;
   display: none;
 }
+.close__button{
+  display: none;
+}
 
 .header__closeButton span i {
   font-size: 1.1rem;
@@ -138,6 +141,18 @@
   color: #fff;
   cursor: pointer;
 }
+
+.scroll__menu
+{
+position: sticky;
+top: 0;
+left: 0;
+background: #fff;
+box-shadow: 5px 5px 15px -5px #fde4e4;
+}
+
+
+
 
 @media screen and (max-width: 1300px) {
   .header {
@@ -184,9 +199,12 @@
     font-size: 1rem;
     font-family: poppins;
     margin-right: 90px;
+    margin:0 auto;
   }
   .custom__search {
     right: 25%;
+    margin: 0 auto;
+    padding: 5px;
   }
 
   .mobile__menu {
@@ -200,6 +218,7 @@
   .nav__right i {
     display: flex;
     justify-content: flex-end;
+   
   }
 }
 
@@ -216,6 +235,23 @@
   .mobile__menu i {
     padding: 0 20px;
     margin-top: 5px;
+  }
+   .close__button {
+    width: fit-content;
+    height: 60px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0.5rem;
+    right: 0rem;
+  }
+
+  .close__button span i {
+    font-size: 1.1rem;
+    background: #212245;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
   }
 }
 

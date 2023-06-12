@@ -9,11 +9,12 @@
 
 .notfound {
   position: absolute;
-  right: 40%;
-  top: 40%;
+ top: 40%;
   font-family: fasthand;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: 100%;
 }
 
 .notfound h2 {
@@ -57,8 +58,28 @@
   margin-left: 60px;
   transition: all 0.3s ease;
   cursor: pointer;
+  margin: auto;
 }
 
-.notfound button:hover{
+.notfound button:hover {
   transform: scale(1.039612);
+}
+
+@media screen and (max-width: 720px) {
+  .notfound {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .notfound{
+   width: 100%;
+    position: absolute;
+    left: 20px;
+  }
 }

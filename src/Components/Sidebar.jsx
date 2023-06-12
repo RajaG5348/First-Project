@@ -1,26 +1,41 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../Assets/Images/logo.png";
 import "../Styles/Sidebar.css";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Container } from "reactstrap";
 
 const Sidebar = ({ size }) => {
   const navigate = useNavigate();
   const menuRef = useRef(null);
+  const headerRef = useRef(null);
 
   const navbarDeatils = [
-    { path: "/", navName: "Home" },
+    { path: "/myhome/home", navName: "Home" },
     { path: "/myhome/menu", navName: "Menu" },
     { path: "/myhome/cart", navName: "Cart" },
-    { path: "/myhome/contact", navName: "Contact" },
+    
   ];
 
   const togglemenu = () => menuRef.current.classList.toggle("show__menu");
+ 
+useEffect(()=>{
+window.addEventListener('scroll',()=>
+{
+  if(document.body.scrollTop>80 ||document.documentElement.scrollTop>80){
+    headerRef.current.classList.add("scroll__menu")
+  }
+  else{
+    headerRef.current.classList.remove("scroll__menu")
+  }
+})
+return()=>window.removeEventListener('scroll')
+},[]) 
+ 
   return (
-    <header className="header">
+    <header className="header" ref={headerRef}>
       <Container>
         <div className="nav__wrapper d-flex align-items-center justify-content-between">
-          <div className="logo" onClick={() => navigate("/home")}>
+          <div className="logo" onClick={() => navigate("/myhome/home")}>
             <img src={Logo} alt="logo" />
           </div>
           {/* ======= menu ======= */}
@@ -38,6 +53,11 @@ const Sidebar = ({ size }) => {
                   {item.navName}
                 </NavLink>
               ))}
+
+              <span>
+                <i className="fa-sharp fa-solid fa-xmark close__button "></i>
+              </span>
+
               <div className="custom__search">
                 <input type="text" placeholder="search item...." />
                 <span>
