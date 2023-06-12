@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/First-project/static/css/main.fd6bbafe.css",
-    "main.js": "/First-project/static/js/main.3529dc26.js",
+    "main.css": "/First-project/static/css/main.f3045333.css",
+    "main.js": "/First-project/static/js/main.d8a6e990.js",
     "static/media/Tandoori Zinger Burger.jpg": "/First-project/static/media/Tandoori Zinger Burger.38b390e70205fd236319.jpg",
     "static/media/Family Feast.jpg": "/First-project/static/media/Family Feast.cd186df16eaed4641372.jpg",
     "static/media/Hero.png": "/First-project/static/media/Hero.5e6ede951b31d4608121.png",
@@ -38,11 +38,11 @@
     "static/media/service-01.jpg": "/First-project/static/media/service-01.6e1d8985ab20e9f7177a.jpg",
     "static/media/service-03.png": "/First-project/static/media/service-03.237d9685ac465378a973.png",
     "index.html": "/First-project/index.html",
-    "main.fd6bbafe.css.map": "/First-project/static/css/main.fd6bbafe.css.map",
-    "main.3529dc26.js.map": "/First-project/static/js/main.3529dc26.js.map"
+    "main.f3045333.css.map": "/First-project/static/css/main.f3045333.css.map",
+    "main.d8a6e990.js.map": "/First-project/static/js/main.d8a6e990.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd6bbafe.css",
-    "static/js/main.3529dc26.js"
+    "static/css/main.f3045333.css",
+    "static/js/main.d8a6e990.js"
   ]
 }
