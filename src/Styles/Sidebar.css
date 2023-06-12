@@ -45,6 +45,7 @@
   color: #212245;
   transition: 0.3s;
   padding: 0 40px;
+  font-family: poppins;
 }
 
 .menu a:hover {
