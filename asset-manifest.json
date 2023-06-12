@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/First-project/static/css/main.3b7b01de.css",
+    "main.css": "/First-project/static/css/main.a12924ac.css",
     "main.js": "/First-project/static/js/main.38eebf6d.js",
     "static/media/Tandoori Zinger Burger.jpg": "/First-project/static/media/Tandoori Zinger Burger.38b390e70205fd236319.jpg",
     "static/media/Family Feast.jpg": "/First-project/static/media/Family Feast.cd186df16eaed4641372.jpg",
@@ -38,11 +38,11 @@
     "static/media/service-01.jpg": "/First-project/static/media/service-01.6e1d8985ab20e9f7177a.jpg",
     "static/media/service-03.png": "/First-project/static/media/service-03.237d9685ac465378a973.png",
     "index.html": "/First-project/index.html",
-    "main.3b7b01de.css.map": "/First-project/static/css/main.3b7b01de.css.map",
+    "main.a12924ac.css.map": "/First-project/static/css/main.a12924ac.css.map",
     "main.38eebf6d.js.map": "/First-project/static/js/main.38eebf6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b7b01de.css",
+    "static/css/main.a12924ac.css",
     "static/js/main.38eebf6d.js"
   ]
 }
