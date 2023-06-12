@@ -39,7 +39,7 @@ return()=>window.removeEventListener('scroll')
             <img src={Logo} alt="logo" />
           </div>
           {/* ======= menu ======= */}
-          <div className="navigation" ref={menuRef} onClick={togglemenu}>
+          <div className="navigation" ref={menuRef}>
             <div className="menu d-flex align-items-center gap-5">
               {navbarDeatils.map((item, index) => (
                 <NavLink
@@ -54,8 +54,12 @@ return()=>window.removeEventListener('scroll')
                 </NavLink>
               ))}
 
-              <span>
-                <i className="fa-sharp fa-solid fa-xmark close__button "></i>
+              <span
+                className="close__button"
+                role="button"
+                onClick={togglemenu}
+              >
+                <i className="fa-sharp fa-solid fa-xmark "></i>
               </span>
 
               <div className="custom__search">
